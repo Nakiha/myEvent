@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/margin_small"
+    android:paddingBottom="@dimen/margin_medium_12"
+    android:paddingStart="@dimen/margin_medium_16"
+    android:paddingEnd="@dimen/margin_medium_16"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/itpg_item_duration_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/margin_medium_12"
+        android:text="04:30~06:00"
+        android:textColor="@color/文本"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/itpg_item_check_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itpg_item_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="这里是日程标题"
+        android:textColor="@color/重要文本"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/itpg_item_duration_text"
+        app:layout_constraintStart_toStartOf="@+id/itpg_item_duration_text"
+        app:layout_constraintTop_toBottomOf="@+id/itpg_item_duration_text" />
+
+    <TextView
+
+        android:id="@+id/itpg_item_detail_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="这里是概述, balabalabalabala"
+        android:textColor="@color/次要文本"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toEndOf="@+id/itpg_item_title_text"
+        app:layout_constraintStart_toStartOf="@+id/itpg_item_title_text"
+        app:layout_constraintTop_toBottomOf="@+id/itpg_item_title_text" />
+
+    <CheckBox
+        android:id="@+id/itpg_item_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itpg_item_title_text" />
+</android.support.constraint.ConstraintLayout>

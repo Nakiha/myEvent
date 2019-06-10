@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/event_card_click_view"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+    <TextView
+        android:id="@+id/event_item_title"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/margin_medium_10"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:textColor="@color/次要文本"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/edit_event_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:layout_marginTop="@dimen/margin_medium_12"
+        android:id="@+id/edit_event_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_tiny"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/编辑事项按钮"
+        android:padding="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="@+id/event_item_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/event_item_title" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="83dp" />
+
+    <TextView
+        android:id="@+id/matter_need_done_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_10"
+        android:layout_marginTop="@dimen/text_tiny"
+        android:text="@string/未完成"
+        android:textColor="@color/重要文本"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/matter_need_done_num"
+        app:layout_constraintStart_toStartOf="@+id/matter_need_done_text"
+        app:layout_constraintTop_toBottomOf="@+id/matter_need_done_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/事务项数初始值"
+        android:textColor="@color/重要文本"
+        android:textSize="@dimen/text_huge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/matter_have_done_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/matter_need_done_text"
+        app:layout_constraintStart_toEndOf="@+id/matter_need_done_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_huge"
+        android:text="@string/已完成"
+        android:textColor="@color/文本"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/matter_have_done_num"
+        app:layout_constraintStart_toStartOf="@+id/matter_have_done_text"
+        app:layout_constraintTop_toBottomOf="@+id/matter_have_done_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/事务项数初始值"
+        android:textColor="@color/文本"
+        android:textSize="@dimen/text_huge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/matter_whole_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/matter_have_done_text"
+        app:layout_constraintStart_toEndOf="@+id/matter_have_done_text"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_huge"
+        android:text="@string/已完成"
+        android:textColor="@color/文本"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/matter_whole_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/事务项数初始值"
+        android:textColor="@color/文本"
+        android:textSize="@dimen/text_huge"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/matter_whole_text"
+        app:layout_constraintTop_toBottomOf="@+id/matter_whole_text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="@dimen/margin_medium_10"
+        android:text="@string/二维码"
+        android:textColor="@color/文本"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBaseline_toBaselineOf="@+id/matter_whole_text"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/show_qr_code_button"
+        android:contentDescription="@string/展示二维码按钮"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_12"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</android.support.constraint.ConstraintLayout>

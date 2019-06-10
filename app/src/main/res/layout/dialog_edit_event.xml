@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:paddingBottom="@dimen/margin_medium_16"
+    android:background="@android:color/transparent">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/编辑事项"
+        android:textColor="@color/重要文本"
+        android:textSize="@dimen/Bar文本大小"
+        android:layout_marginTop="@dimen/margin_medium_16"
+        app:layout_constraintStart_toStartOf="@+id/title_edit_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/title_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/输入主题名"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/文本"
+        android:textColorHint="@color/次要文本"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_goneMarginStart="@dimen/margin_medium_12" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/detail_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/输入概要"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/文本"
+        android:textColorHint="@color/次要文本"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_edit_text" />
+
+    <TextView
+        android:id="@+id/cancel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_tiny"
+        android:paddingEnd="@dimen/margin_tiny"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/transparent"
+        android:text="@string/取消"
+        android:textColor="@color/dialog按钮文本色"
+        app:layout_constraintBottom_toBottomOf="@+id/ok_text"
+        app:layout_constraintEnd_toStartOf="@+id/ok_text"
+        app:layout_constraintTop_toTopOf="@+id/ok_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ok_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_huge"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:paddingStart="@dimen/margin_tiny"
+        android:paddingEnd="@dimen/margin_tiny"
+        android:text="@string/确定"
+        android:textColor="@color/dialog按钮文本色"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_edit_text" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C1DDD5</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#009688</color>
+    <!--文字颜色-->
+    <color name="重要文本">#4E4E4E</color>
+    <color name="文本">#767676</color>
+    <color name="次要文本">#A1A1A1</color>
+    <color name="半透明白色文本">#C0FFFFFF</color>
+    <!--主题色-->
+    <color name="粉色">#FC517C</color>
+    <color name="亮粉">#FF7494</color>
+    <!--一些不知道定义在哪的系统色-->
+    <color name="dialog按钮文本色">#009688</color>
+</resources>

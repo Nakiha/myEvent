@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/个人档案" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/设置" />
+        <item
+            android:id="@+id/nav_delete_all"
+            android:icon="@drawable/ic_delete_forever_black_24dp"
+            android:title="@string/清空列表流"/>
+    </group>
+</menu>

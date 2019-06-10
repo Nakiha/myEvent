@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Event</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <!--主页面-->
+    <string name="侧边栏按钮">侧边栏按钮</string>
+    <string name="看板">看板</string>
+    <string name="搜索按钮">搜索按钮</string>
+    <string name="扫描二维码按钮">扫描二维码按钮</string>
+
+    <string name="添加事项按钮">添加事项</string>
+    <string name="输入主题名以添加事项">输入主题名以添加事项</string>
+    <string name="编辑事项">编辑事项</string>
+    <string name="输入主题名">输入主题名</string>
+    <string name="输入概要">(可选)输入概要</string>
+
+    <!--主页面列表流item-->
+    <string name="未完成">未完成</string>
+    <string name="已完成">已完成</string>
+    <string name="总日程">总日程</string>
+    <string name="编辑事项按钮">编辑事项按钮</string>
+    <string name="二维码">二维码</string>
+    <string name="展示二维码按钮">展示二维码按钮</string>
+    <string name="事务项数初始值">0</string>
+
+    <!--常规-->
+    <string name="取消">取消</string>
+    <string name="确定">确定</string>
+    <string name="个人档案">个人档案</string>
+    <string name="设置">设置</string>
+    <string name="清空列表流">清空列表流</string>
+</resources>

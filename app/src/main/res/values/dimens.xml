@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--文本大小-->
+    <dimen name="Bar文本大小">20sp</dimen>
+
+    <dimen name="text_tiny">8sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_big">24sp</dimen>
+    <dimen name="text_huge">40sp</dimen>
+
+    <!--边距大小-->
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium_16">16dp</dimen>
+    <dimen name="margin_medium_14">14dp</dimen>
+    <dimen name="margin_medium_12">12dp</dimen>
+    <dimen name="margin_medium_10">10dp</dimen>
+    <dimen name="margin_large">22dp</dimen>
+    <dimen name="margin_huge">32dp</dimen>
+
+    <!--高度-->
+    <dimen name="very_high">16dp</dimen>
+    <dimen name="high">12dp</dimen>
+    <dimen name="medium">6dp</dimen>
+    <dimen name="low">4dp</dimen>
+    <dimen name="very_low">2dp</dimen>
+
+    <!--shape标准-->
+    <dimen name="card_corner">4dp</dimen>
+
+    <!--genaral spacing-->
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_xmedium">7dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_mxlarge">25dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_xmlarge">40dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="spacing_xxxlarge">55dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+</resources>
